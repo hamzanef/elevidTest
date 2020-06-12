@@ -1,0 +1,9 @@
+type Query {
+  matchingList: [Todo] @function(name: "matchingtodo4f5cf0bf-${env}")
+}
+
+type Todo @model {
+  id: ID!
+  name: String!
+  description: String
+}
